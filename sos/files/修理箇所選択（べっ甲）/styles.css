@@ -358,3 +358,25 @@
   width:162px;
   word-wrap:break-word;
 }
+#u28 {
+  position:absolute;
+  left:531px;
+  top:49px;
+  width:60px;
+  height:55px;
+}
+#u28_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:60px;
+  height:55px;
+}
+#u29 {
+  position:absolute;
+  left:2px;
+  top:20px;
+  width:56px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
