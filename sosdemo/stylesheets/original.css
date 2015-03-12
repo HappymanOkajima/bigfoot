@@ -26,7 +26,7 @@ img{width:auto\9; height:auto\9;}
 #ondBtnDl dd{ margin-bottom:20px;}
 
 #ondThemeHeader {
-position:relative; z-index:5; height:60px;
+position:relative; z-index:5; height:60px; color:#FFF;
 
 background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #ed9b9b), color-stop(0.00, #ffd1e1));
 background: -webkit-linear-gradient(#ffd1e1, #ed9b9b);
@@ -47,9 +47,9 @@ box-shadow:rgba(227, 227, 227, 0.7) 0px 3px 3px 3px;
 -moz-box-shadow:rgba(227, 227, 227, 0.7) 0px 3px 3px 3px;
 }
 
-#ondHeaderLogo{ position:absolute; top:20px; left:40px; color:#FFF;}
+#ondHeaderLogo{ position:absolute; top:20px; left:40px;}
 #ondHeaderLogo a{ color:#FFF;}
-#ondHeaderLogout{ position:absolute; top:20px; right:40px; color:#FFF; padding-right:20px;}
+#ondHeaderLogout{ position:absolute; top:20px; right:40px; color:#FFF;}
 #ondHeaderLogout img{ margin:-5px 0 0; height:18px;}
 #ondHeaderLogout a{ color:#FFF; padding-right:20px;}
 
@@ -72,6 +72,7 @@ box-shadow:rgba(227, 227, 227, 0.7) 0px 3px 3px 3px;
 ul.ondDefaultBtn{ padding:0;}
 ul.ondDefaultBtn li{ list-style:none; float:left; width:50%; margin-bottom:10px; text-align:center;}
 ul.ondDefaultBtn li a{ width:90%; margin:0 auto; padding:20px 0; font-size:120%;}
+ul.ondDefaultBtn li a img{ display:block; margin:10px auto; width:80%;}
 
 ul.ondDefaultBA{ padding:0;}
 ul.ondDefaultBA li{ list-style:none; float:left; width:50%; margin-bottom:10px; text-align:center;}
@@ -85,3 +86,8 @@ ul.ondDefaultBA li a img{ width:90%; margin:0 auto; margin-bottom:10px;}
 
 #ondFooter{ text-align:center;}
 #ondFooter p{ margin:10px auto;}
+
+.image-data{ margin:10px 0 0;}
+.fa-plus{ display:block; overflow:hidden; padding-top:20px; height:0; width:19px; background:url(../img/icon-plus.png) center center no-repeat;}
+.fa-comments{ display:none;}
+.fa-thumbs-up{ display:none;}
