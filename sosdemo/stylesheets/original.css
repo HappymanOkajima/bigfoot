@@ -64,6 +64,21 @@ box-shadow:rgba(227, 227, 227, 0.7) 0px 3px 3px 3px;
   padding: 40px 20px 0px 20px;
 }
 
+#ondContentControlWrapper{ margin:0 40px;}
+.content {
+  position: relative;
+  min-height: 0;
+  background: #fff;
+  max-width:960px;
+  min-width:480px;
+  margin:0 auto;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 40px 20px 0px 20px;
+}
+
+
 #ondContentWrapper{ text-align:center;}
 #ondContentWrapper h1 span{ display:block; font-size:50%; color:#666; margin-top:5px; margin-bottom:40px;}
 
@@ -72,7 +87,13 @@ box-shadow:rgba(227, 227, 227, 0.7) 0px 3px 3px 3px;
 ul.ondDefaultBtn{ padding:0;}
 ul.ondDefaultBtn li{ list-style:none; float:left; width:50%; margin-bottom:10px; text-align:center;}
 ul.ondDefaultBtn li a{ width:90%; margin:0 auto; padding:20px 0; font-size:120%;}
-ul.ondDefaultBtn li a img{ display:block; margin:10px auto; width:80%;}
+ul.ondDefaultBtn li a img{ display:block; margin:10px auto; width:50%;}
+
+ul.ondTypeSelectBtn{ padding:0;}
+ul.ondTypeSelectBtn li{ list-style:none; float:left; width:50%; margin-bottom:10px; text-align:center;}
+ul.ondTypeSelectBtn li a{ background-color:#fefefe;border: medium groove #FFBF00; width:80%; margin:0 auto; padding:10px 0; font-size:120%;}
+ul.ondTypeSelectBtn li a img{ display:block; margin:10px auto; width:75%;}
+
 
 ul.ondDefaultBA{ padding:0;}
 ul.ondDefaultBA li{ list-style:none; float:left; width:50%; margin-bottom:10px; text-align:center;}
