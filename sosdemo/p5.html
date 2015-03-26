@@ -24,8 +24,36 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/theme.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/premium.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/original.css">
+    
+<style>
+ul.ondTypeSelectBtn{ padding:0;}
+ul.ondTypeSelectBtn li{ list-style:none; float:left; width:50%; margin-bottom:10px; text-align:center;}
+ul.ondTypeSelectBtn li a{ background-color:#fefefe;border: medium groove #FFBF00; width:80%; margin:0 auto; padding:10px 0; font-size:120%;}
+ul.ondTypeSelectBtn li a img{ display:block; margin:10px auto; width:75%;}
+
+#ondContentControlWrapper{
+ margin:0 40px;
+ }
+.content {
+  background-color:#FFCC33;
+  position: relative;
+  min-height: 0;
+  max-width:960px;
+  min-width:480px;
+  margin:0 auto;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 40px 20px 0px 20px;
+}
+.spike {
+ background-image:url('img/spike009.png');
+ background-repeat:no-repeat;
+}
+</style>
+
 </head>
-<body class="theme-blue">
+<body class="theme-blue" style=" background-image: url(img/light_wool.png); background-repeat: repeat; }">
 
     <!-- Demo page code -->
 
@@ -80,18 +108,18 @@
 <div class="content">
 <div class="main-content" id="ondContentWrapper">
           
-<h1>あなたのメガネはどのタイプ？<span class="fa">代表的な4つの素材</span></h1>
+<h1 style="color:#ffffff"><img width="70" height="60" src="img/woman.png"/>&nbsp;あなたのメガネはどのタイプ？<span class="fa"></span></h1>
 
 <div class="pb40">
 <ul class="ondTypeSelectBtn cf">
-<li><a href="" class="btn btn-default">プラスチック<img src="img/p5-01.jpg"></a></li>
-<li><a href="" class="btn btn-default">べっ甲<img src="img/p5-02.jpg"></a></li>
-<li><a href="" class="btn btn-default">メタル<img src="img/p5-03.jpg"></a></li>
-<li><a href="" class="btn btn-default">金無垢<img src="img/p5-04.jpg"></a></li>
+<li><a href="" class="btn btn-default spike">プラスチック<img src="img/p5-01.png"></a></li>
+<li><a href="" class="btn btn-default spike">べっ甲<img src="img/p5-02.png"></a></li>
+<li><a href="" class="btn btn-default spike">メタル<img src="img/p5-03.png"></a></li>
+<li><a href="" class="btn btn-default spike">金無垢<img src="img/p5-04.png"></a></li>
 </ul>
 </div>
 
-<div class="pb40"><a href="p2.html" class="btn btn-primary">トップに戻る</a></div>
+<div class="pb40"><a href="p2.html" class="btn btn-default">トップに戻る</a></div>
 
 
 </div><!--▲▲▲ondContentWrapper▲▲▲-->
