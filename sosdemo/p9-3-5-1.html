@@ -91,7 +91,31 @@
 
 <h1>メタルフレーム<span class="fa">修理内容</span></h1>
 
-<p class="pb20 textRight pr20">修理期間：3日間</p>
+<!-- 本庄さんへここから -->
+<script>
+$(function() {
+ $("input[type='checkbox']").change(function() {
+ var total = parseInt($("#estimate").text(),10);
+ var estimate = parseInt($(this).attr("estimate"),10);
+ $("#estimate").text(($(this).is(":checked")) ? total + estimate : total - estimate);
+ });
+});
+</script>
+<div style="border:1px solid #000000;margin:5px;width:60%; margin-left: auto; margin-right: auto;">
+<div style="font-size:24px">修理期間：3日間</div>
+<div style="font-size:24px">費用：<span id="estimate">1200</span>円～</div>
+<!-- 以下チェックボックスの表示・非表示は眼鏡タイプによって異なる -->
+<div id="estimateCheckbox" style="text-align:center">
+<input type="checkbox" id="menu1" name="menu1" estimate="100"><label for="menu1">ロー付け３ヶ所以上(１ヶ所に付)</label>
+<input type="checkbox" id="menu2" name="menu2" estimate="200"><label for="menu2">飾り・石などの脱着（取り外し）</label>
+<input type="checkbox" id="menu3" name="menu3" estimate="300"><label for="menu3">チタン素材切れ等</label><br>
+<input type="checkbox" id="menu4" name="menu4" estimate="400"><label for="menu4">元IP枠・塗装・特殊カラー</label>
+<input type="checkbox" id="menu5" name="menu5" estimate="500"><label for="menu5">ナイロール・ツーポイント</label>
+<input type="checkbox" id="menu6" name="menu6" estimate="600"><label for="menu5">特殊パーツ・新規</label>
+</div>
+</div>
+<!-- 本庄さんへここまで -->
+
 <div class="pb40">
 <ul class="ondDefaultBA cf">
 <li><a href="img/p9-3-5-before01.jpg" class="popupimg"><img src="img/p9-3-5-before01.jpg" alt="メタルフレーム"></a><p>Before</p></li>

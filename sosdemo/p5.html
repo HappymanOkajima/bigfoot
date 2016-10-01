@@ -33,7 +33,7 @@ ul.ondTypeSelectBtn li a img{ display:block; margin:10px auto; width:75%;}
 
 #ondContentControlWrapper{
  margin:0 40px;
- }
+}
 .content {
   background-color:#FFCC33;
   position: relative;
@@ -50,10 +50,22 @@ ul.ondTypeSelectBtn li a img{ display:block; margin:10px auto; width:75%;}
  background-image:url('img/spike009.png');
  background-repeat:no-repeat;
 }
+.backbtn {
+ background-image:url('img/backbtn.png');
+ background-repeat:no-repeat;
+}
+
+.lightwool {
+ background-image: url('img/light_wool.png');
+ background-repeat: repeat;
+}
+.title-1 {
+ color:#ffffff;
+}
 </style>
 
 </head>
-<body class="theme-blue" style=" background-image: url(img/light_wool.png); background-repeat: repeat; }">
+<body class="theme-blue lightwool">
 
     <!-- Demo page code -->
 
@@ -108,7 +120,7 @@ ul.ondTypeSelectBtn li a img{ display:block; margin:10px auto; width:75%;}
 <div class="content">
 <div class="main-content" id="ondContentWrapper">
           
-<h1 style="color:#ffffff"><img width="70" height="60" src="img/woman.png"/>&nbsp;あなたのメガネは？<span class="fa"></span></h1>
+<h1 class="title-1"><img width="70" height="60" src="img/woman.png"/>&nbsp;あなたのメガネは？<span class="fa"></span></h1>
 
 <div class="pb40">
 <ul class="ondTypeSelectBtn cf">
@@ -119,7 +131,10 @@ ul.ondTypeSelectBtn li a img{ display:block; margin:10px auto; width:75%;}
 </ul>
 </div>
 
-<div class="pb40"><a href="p2.html" class="btn btn-default">トップに戻る</a></div>
+<div class="pb40">
+<a href="p2.html" ><img style="position:relative;top:4px;" src="img/backbtn.png"></a>
+<a href="p2.html" class="btn btn-default btn-lg">トップに戻る</a>
+</div>
 
 
 </div><!--▲▲▲ondContentWrapper▲▲▲-->
