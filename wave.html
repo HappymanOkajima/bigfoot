@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Ground Overlays</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+// This example uses a GroundOverlay to place an image on the map
+// showing an antique map of Newark, NJ.
+
+var historicalOverlay;
+var g_map;
+var image_index = 1;
+  var imageBounds = {
+    north: 50,
+    south: 20,
+    east: 160,
+    west: 120
+  };
+
+// 
+// 緯度：20-50N
+// 経度：120-160E
+
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: {lat: 36, lng: 136}
+  });
+
+
+  historicalOverlay = new google.maps.GroundOverlay(
+      'http://bigfoot.esm.co.jp/0001.png',
+      imageBounds);
+  historicalOverlay.setMap(map);
+  g_map = map;
+  
+  setInterval(changeImage,3000);
+}
+function changeImage() {
+  var imageUrl = 'http://bigfoot.esm.co.jp/000' + image_index + '.png';
+  historicalOverlay = new google.maps.GroundOverlay(
+      imageUrl,
+      imageBounds);
+  historicalOverlay.setMap(g_map);
+  console.log(imageUrl);
+  
+  image_index ++;
+  if (image_index > 4) image_index = 1;
+}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaXqM-0Nj_Xw20lAYvIEbyqDxQ5dwKuaI&callback=initMap&signed_in=true" async defer>
+    </script>
+  </body>
+</html>
