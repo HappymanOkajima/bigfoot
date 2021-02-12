@@ -1,5 +1,5 @@
 {
- "testTable": [
+ "db": [
  {
  "ID": 1,
  "TextValue": "Test1",
