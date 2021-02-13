@@ -18,7 +18,7 @@ info:
 
 # Servers where this API is hosted
 servers: 
-  - url: https://us-central1-apigee-spike-project.cloudfunctions.net
+  - url: https://your-server
 
 # Describe your paths here
 paths:
